@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+section{
+    color:white;
+    width:100%;
+    background-color: gray;
+    position: relative;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+section::before{
+    content:" ";
+    position:absolute;
+    width:301px;
+    height: 312px;
+    background:linear-gradient(90deg,rgb(203, 33, 33),rgb(36, 36, 56));
+    border-radius:50%;
+    transform: translate(-237px,-100px);
+}
+section::after{
+    content:" ";
+    position:absolute;
+    width:301px;
+    height: 312px;
+    background:linear-gradient(90deg,rgb(203, 33, 33),rgb(36, 36, 56));
+    border-radius:50%;
+    transform: translate(237px,100px);
+}
+.container{
+    position:relative;
+    height:246px;
+    width:433px;
+    z-index:100;
+    transition: 0.6s;
+    transform-style:preserve-3d;
+}
+.container:hover{
+    transform:rotateY(180deg);
+}
+.container .card{
+    width:100%;
+    height:100%;
+    border-radius: 25px;
+    position: absolute;
+    background:rgb(193, 6, 6);
+    box-shadow: 0 25px 50px rgb(83, 81, 81);
+    backface-visibility: hidden;
+}
+.front-face header{
+    display:flex;
+    justify-content:right;
+}
+.logo img{
+    margin-top:18px;
+    width:65px;
+    height:48px;
+    margin-right: 15px;
+}
+.chip img{
+    margin:20px;
+    width:56px;
+    height:40px;
+    border-radius: 10px;
+}
+main .number{
+    font-size:2rem;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.front-face .valid{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.valid .valid-date h6{
+   margin-left:164px;
+   margin-top:15px;
+   font-size: 7px
+}
+.valid .valid-date p{
+    margin-top:15px;
+ }
+.valid .valid-date {
+    display:flex;
+}
+.valid .ver .exp{
+    margin-right:10px;
+}
+.card.back-face{
+    border:none;
+    transform:rotateY(180deg);
+}
+.back-face p{
+    display:flex;
+    justify-content: end;
+    font-size: 7px;
+    margin: 9px;
+    padding-right: 24px;
+}
+.card.back-face .field{
+    height:45px;
+    width:100%;
+    position: absolute;
+    background-color: black;
+    top:22px;
+}
+.card.back-face .bar{
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    height: 40px;
+    width: 60%;
+    margin-top: 54px;
+    background-color: #fff;
+    color: black;
+    margin-left: 24px;
+}
+.bar i{
+    padding-right:10px;
+}
+ .card.back-face aside{
+    display:flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-wrap: nowrap;
+    max-width:100%;
+}  
+aside .grey{
+    height:40px;
+    width:60px;
+    background-color:#b4b4b4;
+    margin-top:-25px;
+    margin-left:27px;
+    border-radius:5px;
+}
+aside .info{
+    margin-right:88px;
+    width:100%;
+}
+
+aside .info span{
+    margin-right:60px;
+}
