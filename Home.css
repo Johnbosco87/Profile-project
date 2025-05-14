@@ -20,6 +20,10 @@ nav{
     font-size:35px;
     font-weight:600;
 }
+.logo-icon i{
+    color:#fff;
+
+}
 .logo-icon a{
     color: #fff;
     text-decoration: none;
@@ -112,13 +116,17 @@ footer{
    margin:auto;
    padding:20px 15px 40px 40px;
 }
+footer .logo i{
+    color:#fff;
+    font-size: 30px;
+}
 footer .head .top{
     display:flex;
     justify-content:space-between;
     align-items: center;
 }
 .top .logo span{
-    font-size:20px;
+    font-size:26px;
     font-weight:500;
     color: #fff; 
 }
