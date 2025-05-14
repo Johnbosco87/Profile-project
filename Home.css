@@ -3,11 +3,14 @@
     margin:0;
     box-sizing:border-box;
 }
+body{
+    background:#000;
+}
 header{
     width:100%;
     background:#000;
     position:fixed;
-    z-index: 12;
+    z-index: 1;
 }
 nav{
     display:flex;
@@ -51,10 +54,10 @@ nav{
 }
 .img{
     background: url(image/baby.jpg)no-repeat;
-    background-size: cover;
+    background-size: contain;
     height:100vh;
     width:100%;
-    background-position: center;
+    background-position:center;
     position:relative;
 }
 .img::before{
@@ -129,6 +132,7 @@ footer .head .top{
     font-size:26px;
     font-weight:500;
     color: #fff; 
+    font-family: 'Times New Roman', Times, serif;
 }
 .top .social{
     display: flax;  
